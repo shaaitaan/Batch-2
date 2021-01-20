@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- integrate fontawesone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        form{
+            box-shadow:0 0 10px black;
+            background:linear-gradient(45deg,black,orangered,black)
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <nav>
+        <h2>17.Bootstrap | Forms</h2>
+    </nav>
+    <div class="container mt-5">
+        <form action="" class="text-white m-auto p-3 w-50 rounded">
+            <div class="form-group">
+                <label for="uname">User Name</label>
+                <input type="text" id="uname" placeholder="enter user name" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="password_field">Password</label>
+                <input type="password" id="password_field" placeholder="enter password" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" placeholder="enter email" class="form-control">
+                <small class="form-text text-muted">Your email will be used privately</small>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="">Attach Profile</label>
+                <input type="file" id="profile_attach" class="form-control-file">
+                <small class="form-text text-mutated">Max 2MB Size</small>
+            </div>
+
+            <div class="form-group">
+                <label for="">Hobbies</label>
+                <div class="form-check">
+                    <input type="checkbox" value="reading" class="form-check-input">Reading
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="coding" class="form-check-input">Coding
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="travel" class="form-check-input">Travelling
+                </div>
+            </div>
+
+            <button class="btn btn-success" type=submit>Regsiter</button>
+        </form>
+    </div>
+    <!-- java script section-->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

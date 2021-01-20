@@ -1,0 +1,12 @@
+body{
+    margin:0px;
+    margin-bottom:200px;
+}
+nav{
+    background:linear-gradient(45deg,black, darkred);
+    padding:5px;
+    color:white;
+}
+nav h2{
+    font-size:24x;    
+}

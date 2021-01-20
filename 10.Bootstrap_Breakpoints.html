@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>        
+        /* small devices : min-width: 576px*/
+        @media(min-width: 576px){
+            body{
+                background-color:orangered;
+            }
+        }
+
+        /*medium devices : min-width: 768px*/
+        @media(min-width: 768px){
+            body{
+                background-color:limegreen;
+            }
+        }
+
+        /*large devices : min-width: 992px*/
+        @media(min-width: 992px){
+            body{
+                background-color:aquamarine;
+            }
+        }        
+
+        /*extra large devices : min-width: 1200px*/
+        @media(min-width: 1200px){
+            body{
+                background-color:lightcoral;
+            }
+        }  
+        
+        img{
+            width:90%;
+        }
+    </style>
+    <title>Breakpoints</title>
+</head>
+<body>
+    <nav>
+        <h2>10.Bootstrap | Breakpoints </h2>
+    </nav>
+    <div class="container mt-5">
+        <img src="images/corporate2.jpg" class="d-block" alt="">
+
+        <h1 id="screen_width">Screen Size: </h1>
+    </div>
+    <!-- java script section-->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        window.addEventListener('resize', function(){
+            let width = window.innerWidth;
+            document.querySelector('#screen_width').innerText = `Screen Size = ${width}px`
+        })
+    </script>
+</body>
+</html>
